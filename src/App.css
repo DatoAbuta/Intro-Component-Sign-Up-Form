@@ -58,6 +58,11 @@ button{
     line-height: 26px; /* 173.333% */
     letter-spacing: 1px;
     margin-top: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #25885d;
 }
 
 h6{
