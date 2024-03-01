@@ -11,7 +11,7 @@ type SubmitType = {
 }
 
 const schema = yup.object().shape({
-  name: yup.string().required('First Name is necessary').matches(/^[a-zA-Z]+$/, 'Only letters are allowed'),
+  name: yup.string().required('First Name cannot be empty').matches(/^[a-zA-Z]+$/, 'Only letters are allowed'),
   lastname: yup.string().required("Last Name cannot be empty").matches(/^[a-zA-Z]+$/, 'Only letters are allowed'),
   email: yup.string().required("Looks like this is not an email").email("Email Isn't Valid"),
   password: yup.string().required("Password cannot be empty").min(6, "Minimum 6 Symbol").max(20, "Too many")
